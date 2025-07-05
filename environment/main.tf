@@ -6,8 +6,8 @@ module "resource_group" {
 
 module "resource_groupA" {
   source      = "../modules/azurerm_resource_group"
-  rg_name     = var.rg_name1
-  rg_location = var.rg_location1
+  rg_name     = var.resource_group_name
+  rg_location = var.resoruce_group_location
 }
 
 module "key_vault" {
