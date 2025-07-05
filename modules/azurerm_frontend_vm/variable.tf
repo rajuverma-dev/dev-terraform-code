@@ -1,0 +1,15 @@
+variable "rg_name" {}
+variable "rg_location" {}
+variable "fvm_name" {}
+variable "vm_size" {}
+variable "vm_image_publisher" {}
+variable "vm_image_offer" {}
+variable "vm_image_sku" {}
+variable "vm_image_version" {}
+variable "keyvault_name" {}
+variable "fnic_name" {}
+variable "fpip_name" {}
+variable "secret_vmuser" {}
+variable "secret_vmpass" {}
+variable "vm_user_name" {}
+variable "secret_vmpassvalue" {}
