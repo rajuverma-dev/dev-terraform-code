@@ -4,6 +4,12 @@ module "resource_group" {
   rg_location = var.rg_location
 }
 
+module "resource_groupA" {
+  source      = "../modules/azurerm_resource_group"
+  rg_name     = var.resource_group_name
+  rg_location = var.resource_group_location
+}
+
 module "key_vault" {
   depends_on    = [module.resource_group]
   source        = "../modules/azurerm_key_vault"
